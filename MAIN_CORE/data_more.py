@@ -29,5 +29,5 @@ def func_recv_ports(**data):
                     s.sendall("GET / HTTP/1.0\r\nHELP\r\n\r\n".encode('utf-8'))
                     data_baner = s.recv(1024)
                     print(f'baner-\t{data_baner}')
-                    s.close
+                    s.close()
 func_recv_ports(**data_json)
